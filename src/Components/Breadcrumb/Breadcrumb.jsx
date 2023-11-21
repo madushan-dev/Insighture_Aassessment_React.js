@@ -1,23 +1,40 @@
-import { useState, React } from "react";
+import { useState, useEffect } from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 import "./Breadcrumb.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function Breadcrumb() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const location = useLocation();
+  const [category, setCategory] = useState("");
+  const [item, setItem] = useState("");
+
+  useEffect(() => {
+    const pathSegments = location.pathname
+      .split("/")
+      .filter((segment) => segment !== "");
+    if (pathSegments.length > 0) {
+      setCategory(pathSegments[1]);
+    }
+    if (pathSegments.length > 1) {
+      setItem(pathSegments[2]);
+    }
+  }, [location.pathname]);
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
   };
+
   return (
     <div className="breadcrumb">
       <div className="breadcrumb__wrapper">
         <div className="breadcrumb__wrapper__item">
           <div>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </div>
           <div>/</div>
           <div className="item-list" onClick={toggleDropdown}>
-            <span>Item</span> <i class="bi bi-chevron-down"></i>
+            <span>Items</span> <i className="bi bi-chevron-down"></i>
           </div>
         </div>
         <div
@@ -28,38 +45,70 @@ function Breadcrumb() {
             <div>
               <h2>Category 01</h2>
               <ul>
-                <li>Item List 1</li>
-                <li>Item List 2</li>
-                <li>Item List 3</li>
-                <li>Item List 4</li>
-                <li>Item List 5</li>
+                <Link to="./category-01/item-list-01">
+                  <li>Item List 1</li>
+                </Link>
+                <Link to="./category-01/item-list-02">
+                  <li>Item List 2</li>
+                </Link>
+                <Link to="./category-01/item-list-03">
+                  <li>Item List 3</li>
+                </Link>
+                <Link to="./category-01/item-list-04">
+                  <li>Item List 4</li>
+                </Link>
+                <Link to="./category-01/item-list-05">
+                  <li>Item List 5</li>
+                </Link>
               </ul>
             </div>
             <div>
               <h2>Category 02</h2>
               <ul>
-                <li>Item List 1</li>
-                <li>Item List 2</li>
-                <li>Item List 3</li>
-                <li>Item List 4</li>
-                <li>Item List 5</li>
+                <Link to="./category-02/item-list-01">
+                  <li>Item List 1</li>
+                </Link>
+                <Link to="./category-02/item-list-02">
+                  <li>Item List 2</li>
+                </Link>
+                <Link to="./category-02/item-list-03">
+                  <li>Item List 3</li>
+                </Link>
+                <Link to="./category-02/item-list-04">
+                  <li>Item List 4</li>
+                </Link>
+                <Link to="./category-02/item-list-05">
+                  <li>Item List 5</li>
+                </Link>
               </ul>
             </div>
             <div>
               <h2>Category 03</h2>
               <ul>
-                <li>Item List 1</li>
-                <li>Item List 2</li>
-                <li>Item List 3</li>
-                <li>Item List 4</li>
-                <li>Item List 5</li>
+                <Link to="./category-03/item-list-01">
+                  <li>Item List 1</li>
+                </Link>
+                <Link to="./category-03/item-list-02">
+                  <li>Item List 2</li>
+                </Link>
+                <Link to="./category-03/item-list-03">
+                  <li>Item List 3</li>
+                </Link>
+                <Link to="./category-03/item-list-04">
+                  <li>Item List 4</li>
+                </Link>
+                <Link to="./category-03/item-list-05">
+                  <li>Item List 5</li>
+                </Link>
               </ul>
             </div>
           </div>
         </div>
         <div className="breadcrumb__wrapper__item">
           <div>
-            <a href="/">Home</a>
+            <div>{category || "Category"}</div>
+            <div>/</div>
+            <div>{item || "Item List"}</div>
           </div>
         </div>
       </div>

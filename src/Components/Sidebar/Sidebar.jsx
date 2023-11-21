@@ -70,15 +70,17 @@ function Sidebar() {
                 )}
               </a>
             </div>
-            {openPrimaryMenu === index && sidebarOpen && (
-              <div className="sidebar-secondary">
-                {menu.submenus.map((submenu, subIndex) => (
-                  <div className="sidebar-secondary-item" key={subIndex}>
-                    <a href="#">{submenu}</a>
-                  </div>
-                ))}
-              </div>
-            )}
+            {openPrimaryMenu === index &&
+              menu.submenus.length > 0 &&
+              sidebarOpen && (
+                <div className="sidebar-secondary">
+                  {menu.submenus.map((submenu, subIndex) => (
+                    <div className="sidebar-secondary-item" key={subIndex}>
+                      <a href="#">{submenu}</a>
+                    </div>
+                  ))}
+                </div>
+              )}
           </div>
         ))}
       </div>

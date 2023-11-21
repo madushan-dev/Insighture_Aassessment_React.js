@@ -87,6 +87,12 @@
   list-style: none;
   margin-left: 10px;
 }
+.breadcrumb__dropdown .content ul li {
+  cursor: pointer;
+}
+.breadcrumb__dropdown .content ul li:hover {
+  color: #bc2d2d;
+}
 
 @media screen and (max-width: 800px) {
   .breadcrumb__wrapper__item,

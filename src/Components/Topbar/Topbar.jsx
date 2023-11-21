@@ -10,16 +10,15 @@ function Topbar() {
         <img className="logo" src={logo} alt="" />
       </div>
       <div className="topbar__right">
-        <div className="button">
+        <div className="button btn-partner">
           <i className="bi bi-chevron-down"></i>
           <button>Partner with us</button>
         </div>
-        <div className="button">
+        <div className="button btn-signup">
           <i class="bi bi-house-door"></i>
-
           <button>Sign up or log in</button>
         </div>
-        <div className="button">
+        <div className="button btn-account">
           <i class="bi bi-person"></i>
           <button>Account</button>
         </div>

@@ -22,7 +22,7 @@ function HomepageHero() {
             </label>
 
             <div className="input-wrapper">
-              <div>
+              <div className="input-element">
                 <i class="bi bi-rocket"></i>
                 <input
                   type="text"

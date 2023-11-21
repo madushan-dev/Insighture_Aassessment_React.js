@@ -30,16 +30,19 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 650px;
   color: white;
   text-align: center;
   z-index: 999;
 }
 .HomepageHero__center h1 {
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 48px;
   margin-bottom: 40px;
+  width: 80%;
   font-family: StratosMedium;
+}
+.HomepageHero__search {
+  width: 70%;
 }
 .HomepageHero__search .input-wrapper {
   display: flex;
@@ -52,8 +55,14 @@
   border-radius: 100px;
   margin: 20px 0;
   padding: 0 5px;
-  width: 600px;
+  width: 100%;
   height: 65px;
+  margin: 20px auto;
+}
+.input-wrapper .input-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .input-wrapper .bi {
   color: #00ccbc;
@@ -86,4 +95,38 @@
 .HomepageHero__center .login-link {
   color: #00ccbc;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .HomepageHero__left,
+  .HomepageHero__right {
+    display: none;
+  }
+  .HomepageHero__content {
+    display: block;
+  }
+  .topbar {
+    padding: 5px 20px !important;
+    width: 100% !important;
+  }
+  .HomepageHero__center {
+    text-align: left;
+    align-items: flex-start;
+    margin-left: 15px;
+  }
+  .HomepageHero__center h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    width: 90%;
+  }
+  .HomepageHero__search {
+    width: 90%;
+  }
+  .HomepageHero__search .input-wrapper {
+    width: 100%;
+    height: 50px;
+  }
+  .input-wrapper button {
+    height: 40px;
+  }
 }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Breadcrumb.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 

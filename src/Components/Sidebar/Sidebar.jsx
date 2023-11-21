@@ -52,12 +52,13 @@ function Sidebar() {
           <i className={`bi bi-chevron-${sidebarOpen ? "left" : "right"}`}></i>
         </div>
         {menuData.map((menu, index) => (
-          <div className="sidebar-primary-item" key={index}>
-            <div
-              className="primary-menu-header"
-              onClick={() => togglePrimaryMenu(index)}
-              hidden={!sidebarOpen}
-            >
+          <div
+            className="sidebar-primary-item"
+            key={index}
+            onClick={() => togglePrimaryMenu(index)}
+            hidden={!sidebarOpen}
+          >
+            <div className="primary-menu-header">
               <a href="#">
                 {menu.label}{" "}
                 {menu.submenus.length > 0 && (

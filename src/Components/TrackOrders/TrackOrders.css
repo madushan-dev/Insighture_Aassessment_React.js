@@ -1,0 +1,74 @@
+.track_orders {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 40px auto;
+  background-color: white;
+  -webkit-box-shadow: 0 6px 20px 0 #00000014;
+  border-radius: 8px;
+}
+.track_orders div {
+  flex: 1;
+}
+.track_orders__left {
+  padding: 30px;
+}
+.track_orders__left h2 {
+  font-family: stratos, sans-serif;
+  font-size: 30px;
+}
+.track_orders__left p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 16px;
+  text-align: justify;
+}
+.track_orders__left img {
+  margin: 50px 0;
+  width: 300px;
+}
+.track_orders__center {
+  position: relative;
+  align-self: center;
+}
+.track_orders__center img {
+  width: 500px;
+}
+.track_orders__center .notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+}
+.track_orders__right {
+  padding: 30px;
+}
+.track_orders__right h2 {
+  margin-bottom: 20px;
+}
+.track_orders__right p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+@media (max-width: 800px) {
+  .track_orders__center img {
+    width: 100vw;
+  }
+  .track_orders__center .notification {
+    width: 300px;
+  }
+  .track_orders {
+    margin-bottom: 100px;
+  }
+  .track_orders__left h2,
+  .track_orders__right h2 {
+    font-size: 25px;
+  }
+  .track_orders__left p,
+  .track_orders__right p {
+    font-size: 16px;
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import HomepageHero from "../../Components/HomepageHero/HomepageHero";
 import ImageCarousel from "../../Components/ImageCarousel/ImageCarousel";
+import TrackOrders from "../../Components/TrackOrders/TrackOrders";
 
 function Home() {
   const carouselOne = [
@@ -63,6 +64,7 @@ function Home() {
       <HomepageHero />
       <ImageCarousel images={carouselOne} />
       <ImageCarousel images={carousalTwo} />
+      <TrackOrders />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ImageCarousel.css";
 
 function ImageCarousel({ images }) {
@@ -8,7 +9,9 @@ function ImageCarousel({ images }) {
     <div className="carousel-wrapper">
       <div className="ImageCarousel">
         {duplicatedImages.map((image, index) => (
-          <img className="carousel-item" key={index} src={image} alt="" />
+          <Link to="/products" key={index} className="carousel-item-link">
+            <img className="carousel-item" src={image} alt="" />
+          </Link>
         ))}
       </div>
     </div>

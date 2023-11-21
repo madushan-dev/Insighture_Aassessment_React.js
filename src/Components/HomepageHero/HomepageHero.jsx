@@ -23,7 +23,7 @@ function HomepageHero() {
 
             <div className="input-wrapper">
               <div className="input-element">
-                <i className="bi bi-rocket"></i>
+                <i className="bi bi-send"></i>
                 <input
                   type="text"
                   name="search-input"

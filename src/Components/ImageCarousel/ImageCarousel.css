@@ -5,12 +5,13 @@
   display: flex;
   gap: 25px;
   animation: marquee 90s linear infinite;
-  height: 110px;
+  width: 100%;
   margin-bottom: 20px;
 }
 
 .ImageCarousel .carousel-item {
   border-radius: 10px;
+  height: 110px;
 }
 @keyframes marquee {
   0% {

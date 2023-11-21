@@ -1,0 +1,40 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 55px;
+}
+.topbar__left .logo {
+  width: 120px;
+  height: auto;
+}
+.topbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+.topbar__right button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+}
+.topbar__right .button {
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: #2e3333;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topbar__right .button .bi {
+  margin-right: 10px;
+  color: #00c2b3;
+  font-weight: 700;
+  font-size: 16px;
+}

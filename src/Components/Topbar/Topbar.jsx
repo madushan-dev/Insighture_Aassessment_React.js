@@ -15,11 +15,11 @@ function Topbar() {
           <button>Partner with us</button>
         </div>
         <div className="button btn-signup">
-          <i class="bi bi-house-door"></i>
+          <i className="bi bi-house-door"></i>
           <button>Sign up or log in</button>
         </div>
         <div className="button btn-account">
-          <i class="bi bi-person"></i>
+          <i className="bi bi-person"></i>
           <button>Account</button>
         </div>
       </div>

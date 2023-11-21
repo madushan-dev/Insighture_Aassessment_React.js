@@ -1,0 +1,22 @@
+.carousel-wrapper {
+  overflow: hidden;
+}
+.ImageCarousel {
+  display: flex;
+  gap: 25px;
+  animation: marquee 90s linear infinite;
+  height: 110px;
+  margin-bottom: 20px;
+}
+
+.ImageCarousel .carousel-item {
+  border-radius: 10px;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% + 20px * 2));
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomepageHero.css";
-import grocerybag from "../../Assets/grocery-bag.webp";
-import burger from "../../Assets/burger.webp";
+import grocerybag from "../../Assets/grocery-bag.png";
+import burger from "../../Assets/burger.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import Topbar from "../Topbar/Topbar";
@@ -23,7 +23,7 @@ function HomepageHero() {
 
             <div className="input-wrapper">
               <div className="input-element">
-                <i class="bi bi-rocket"></i>
+                <i className="bi bi-rocket"></i>
                 <input
                   type="text"
                   name="search-input"

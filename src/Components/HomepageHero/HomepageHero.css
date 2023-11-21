@@ -1,15 +1,15 @@
 .HomepageHero {
   background-color: #030001;
-  height: 550px;
-  padding-bottom: 60px;
+  height: 500px;
   position: relative;
+  margin-bottom: -60px;
 }
 
 .HomepageHero__content {
   display: flex;
   justify-content: space-around;
   height: 100%;
-  align-items: center;
+  align-items: flex-start;
 }
 .HomepageHero__left {
   position: absolute;
@@ -32,7 +32,8 @@
   align-items: center;
   color: white;
   text-align: center;
-  z-index: 999;
+  z-index: 1;
+  margin-top: 40px;
 }
 .HomepageHero__center h1 {
   font-size: 2.5rem;
@@ -97,7 +98,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   .HomepageHero__left,
   .HomepageHero__right {
     display: none;

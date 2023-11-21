@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 55px;
+  height: 80px;
 }
 .topbar__left .logo {
   width: 120px;
@@ -19,6 +20,9 @@
   padding: 0;
   margin: 0;
   background: none;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #2e3333;
+  font-size: 16px;
 }
 .topbar__right .button {
   background: #fff;
@@ -31,10 +35,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .topbar__right .button .bi {
   margin-right: 10px;
   color: #00c2b3;
-  font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
 }

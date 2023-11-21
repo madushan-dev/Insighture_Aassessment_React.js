@@ -1,3 +1,89 @@
 .HomepageHero {
   background-color: #030001;
+  height: 550px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.HomepageHero__content {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+}
+.HomepageHero__left {
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+.HomepageHero__right {
+  position: absolute;
+  right: 0;
+  top: 80px;
+}
+.HomepageHero__left img,
+.HomepageHero__right img {
+  width: 600px;
+}
+.HomepageHero__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 650px;
+  color: white;
+  text-align: center;
+  z-index: 999;
+}
+.HomepageHero__center h1 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 40px;
+  font-family: StratosMedium;
+}
+.HomepageHero__search .input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 100px;
+  margin: 20px 0;
+  padding: 0 5px;
+  width: 600px;
+  height: 65px;
+}
+.input-wrapper .bi {
+  color: #00ccbc;
+  margin: 0 10px;
+  font-size: 20px;
+}
+.input-wrapper input {
+  background: none;
+  border: none;
+  outline: none;
+  height: 50px;
+}
+.input-wrapper input::placeholder {
+  color: #aaa;
+  font-size: 14px;
+}
+.input-wrapper button {
+  background-color: #00ccbc;
+  color: white;
+  font-weight: 700;
+  width: 130px;
+  height: 55px;
+  border: none;
+  border-radius: 100px;
+}
+.input-wrapper button:hover {
+  background-color: #00c2b3;
+  cursor: pointer;
+}
+.HomepageHero__center .login-link {
+  color: #00ccbc;
+  cursor: pointer;
 }

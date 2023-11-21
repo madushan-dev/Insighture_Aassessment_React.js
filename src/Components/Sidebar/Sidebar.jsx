@@ -59,16 +59,14 @@ function Sidebar() {
             hidden={!sidebarOpen}
           >
             <div className="primary-menu-header">
-              <a href="#">
-                {menu.label}{" "}
-                {menu.submenus.length > 0 && (
-                  <i
-                    className={`bi bi-chevron-${
-                      openPrimaryMenu === index ? "down" : "right"
-                    }`}
-                  ></i>
-                )}
-              </a>
+              {menu.label}{" "}
+              {menu.submenus.length > 0 && (
+                <i
+                  className={`bi bi-chevron-${
+                    openPrimaryMenu === index ? "down" : "right"
+                  }`}
+                ></i>
+              )}
             </div>
             {openPrimaryMenu === index &&
               menu.submenus.length > 0 &&
@@ -76,7 +74,7 @@ function Sidebar() {
                 <div className="sidebar-secondary">
                   {menu.submenus.map((submenu, subIndex) => (
                     <div className="sidebar-secondary-item" key={subIndex}>
-                      <a href="#">{submenu}</a>
+                      {submenu}
                     </div>
                   ))}
                 </div>

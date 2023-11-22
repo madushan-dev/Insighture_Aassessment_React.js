@@ -14,15 +14,23 @@ function Breadcrumb() {
       .split("/")
       .filter((segment) => segment !== "");
     if (pathSegments.length > 0) {
-      setCategory(pathSegments[1]);
+      setCategory(formatWord(pathSegments[1]));
     }
     if (pathSegments.length > 1) {
-      setItem(pathSegments[2]);
+      setItem(formatWord(pathSegments[2]));
     }
   }, [location.pathname]);
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
+  };
+  // Replacing the dash with space and capitalize the first letter
+  const formatWord = (word) => {
+    if (!word) return "";
+    return word
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ");
   };
 
   return (

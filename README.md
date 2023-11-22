@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Insighture Assessment
+
+Demo link - https://soft-khapse-2be76d.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
